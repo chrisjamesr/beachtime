@@ -1,9 +1,11 @@
 <script>
-	import Dots from './Dots.svelte'
+  import Dots from './Dots.svelte'
+  import Header from './pages/components/Header.svelte'
 </script>
 
 <main>
 	<section class="container">
+      <Header />
 		<h1 class="title">
 			<span>beachtime</span>
 			<Dots />
