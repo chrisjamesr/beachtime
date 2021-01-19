@@ -10,10 +10,6 @@
 			<span>beachtime</span>
 			<Dots />
 		</h1>        
-		<br>
-		<div class="coming-soon">
-			Coming soon
-		</div>
 	</section>
 </main>
 
@@ -39,17 +35,16 @@
 	}
 
 	.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  flex-direction: column;
-  max-width: 95vw;
-  
-}
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    max-width: 95vw;  
+  }
 
 .title {
   font-family: /* 'Caveat', cursive, */
@@ -62,14 +57,13 @@
     'Helvetica Neue',
     Arial,
     sans-serif;
-  display: block;
-  font-weight: 700;
-  font-size: 6rem;
-  color: #35495e;
-  letter-spacing: 1px;
-  width: 80vw;
-  
-}
+    display: block;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #35495e;
+    letter-spacing: 1px;
+    width: 80vw;  
+  }
 .coming-soon {
   /* font-family: 'Dancing Script', cursive; */
   font-family: 'Caveat', cursive;
@@ -80,19 +74,6 @@
 
 .coming-soon div {
   font-size: 1rem;
-}
-
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 
 @media screen and (max-width: 500px) {
