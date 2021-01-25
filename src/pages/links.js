@@ -1,14 +1,28 @@
+import Home from './Home.svelte'
+import About from './About.svelte'
+import Contact from './Contact.svelte'
+import Gallery from './Gallery.svelte'
+
 export default [
   {
-    name: 'home'
+    path: "/",
+    name: "home",
+    component: Home
   },
   {
-    name: 'about'
+    path: "about",
+    name: "about",
+    component: About
+
   },
   {
-    name: 'gallery'
+    path: "gallery",
+    name: "gallery",
+    component: Gallery
   },
   {
-    name: 'contact'
+    path: "contact",
+    name: "contact",
+    component: Contact
   },
 ];
