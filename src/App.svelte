@@ -1,9 +1,5 @@
 <script>
   import {Router, Route, Link} from 'svelte-routing';
-  import Home from './pages/Home.svelte';
-  import About from './pages/About.svelte';
-  import Contact from './pages/Contact.svelte';
-  import Gallery from './pages/Gallery.svelte';
   import Header from './pages/components/Header.svelte';
   import Footer from './pages/components/Footer.svelte';
 
