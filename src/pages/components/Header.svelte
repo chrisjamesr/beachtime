@@ -1,16 +1,17 @@
 <script>
 
+  import linklist from '../links.js';
   import Link from './Link.svelte';
-  import links from '../links.js';
+  // import {Link} from 'svelte-routing';
 
 </script>
 
 <header>
-
-  {#each links as link}
-    <Link link={link} />
-  {/each}
-
+  
+    {#each linklist as link}
+      <Link {link} />
+    {/each}
+  
 </header>
 
 <style>

@@ -1,12 +1,14 @@
 <script>
-  export let link;
+export let link;
+import { Link } from 'svelte-routing';
+
 </script>
 
 <div class="header-link">
 
-  <a href="/{link.name}">
+  <Link class="nav-link" to={link.path}>
     {link.name}
-  </a>
+  </Link>
 
 </div>
 
@@ -20,25 +22,25 @@
     justify-content: center;
   }
 
-  a {
-    text-align: center;
+  .nav-link > :global(a){
+    text-align: center; 
     margin: auto;
     text-transform: capitalize;
     color: black;
     font-size: 2rem;
   }
 
-  a:hover {
+  :global(a):hover {
     color: black;
     text-decoration: none;
   }
 
-  a:active {
+  :global(a):active {
     color: black;
     text-decoration: none;
   }
 
-  a:visited {
+  :global(a):visited {
     color: black;
   }  
 

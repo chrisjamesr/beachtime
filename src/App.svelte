@@ -1,16 +1,41 @@
 <script>
-  import Dots from './Dots.svelte'
-  import Header from './pages/components/Header.svelte'
+  import {Router, Route, Link} from 'svelte-routing';
+  import Home from './pages/Home.svelte';
+  import About from './pages/About.svelte';
+  import Contact from './pages/Contact.svelte';
+  import Gallery from './pages/Gallery.svelte';
+  import Header from './pages/components/Header.svelte';
+  import Footer from './pages/components/Footer.svelte';
+
+  import linklist from './pages/links.js';
+  
+  export let url = "";
+
+  let currentComponent;
+   
 </script>
 
+
 <main>
-	<section class="container">
+
+  <Router url="{url}">  
+
+    <section class="container">
+
       <Header />
-		<h1 class="title">
-			<span>beachtime</span>
-			<Dots />
-		</h1>        
-	</section>
+
+      {#each linklist as route}
+        
+        <Route path={route.path}> <svelte:component this={route.component}/> </Route>
+
+      {/each}
+
+    </section>
+
+    <Footer/>
+
+  </Router> 
+
 </main>
 
 <style>
@@ -21,12 +46,7 @@
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		/* text-transform: uppercase; */
-		font-size: 4em;
-		font-weight: 100;
-	}
+	
 
 	@media (min-width: 640px) {
 		main {
@@ -46,7 +66,7 @@
     max-width: 95vw;  
   }
 
-.title {
+section .title {
   font-family: /* 'Caveat', cursive, */
     'Dancing Script', cursive,
     /* 'Source Sans Pro', */
@@ -70,10 +90,6 @@
   font-weight: 400;
   font-size: 3rem;
   color: #35495e;
-}
-
-.coming-soon div {
-  font-size: 1rem;
 }
 
 @media screen and (max-width: 500px) {
