@@ -29,6 +29,7 @@ function serve() {
 }
 
 export default {
+	
 	input: 'src/main.js',
 	output: {
 		sourcemap: true,
@@ -39,6 +40,7 @@ export default {
 	plugins: [
 		svelte({
 			compilerOptions: {
+				hydratable: true,
 				// enable run-time checks when not in production
 				dev: !production
 			}
