@@ -1,6 +1,6 @@
 <script>
 
-  import linklist from '../links.js';
+  import linklist from '../linklist.js';
   import Link from './Link.svelte';
   // import {Link} from 'svelte-routing';
 
