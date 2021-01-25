@@ -7,7 +7,7 @@
   import Header from './pages/components/Header.svelte';
   import Footer from './pages/components/Footer.svelte';
 
-  import linklist from './pages/links.js';
+  import linklist from './pages/linkList.js';
   
   export let url = "";
 
