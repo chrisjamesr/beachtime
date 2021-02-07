@@ -1,14 +1,15 @@
 <script>
-  import Dots from '../Dots.svelte';
+  import Dots from './components/Dots.svelte';
 </script>
 
-<section>
+<header>
+
   <h1 class="title">
     <span>beachtime</span>
-    <Dots />
-    
+    <Dots />    
   </h1>        
-</section>    
+
+</header>    
 
 <style>
   h1 {

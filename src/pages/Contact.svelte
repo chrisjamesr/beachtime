@@ -2,9 +2,9 @@
 
 </script>
 
-<section>
+<header>
   <h1>Contact</h1>
-</section>
+</header>
 
 <style>
   

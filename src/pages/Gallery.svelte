@@ -2,9 +2,9 @@
 
 </script>
 
-<section>
+<header>
   <h1>Gallery</h1>
-</section>
+</header>
 
 <style>
   
