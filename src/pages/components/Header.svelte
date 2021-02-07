@@ -35,15 +35,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
-    /* margin: 2% 0 */
   }
 
   div {
-    /* border: 1px solid black; */
     text-align:center;
     vertical-align: center;
     width: 25%;
-    /* height: 100%; */
     display: flex;
     justify-content: center;
   }
@@ -54,28 +51,28 @@
     margin: auto;
     text-transform: capitalize;
     text-decoration: none;
-    color: black;
+    color:rgb(240,88,25);
     font-size: 2rem;
   }
 
   :global(a):hover {
-    color: black;
+    color:rgb(240,88,25);
     text-decoration: none;
   }
 
   :global(a):active {
-    color: black;
+    color:rgb(240,88,25);
     text-decoration: none;
   }
 
   :global(a):visited {
-    color: black;
+    color:rgb(240,88,25);
     text-decoration: none;
   }  
 
   .selected > :global(a){
     font-weight: 700;
-    color:red;
+    color:rgb(240,88,25);
     text-decoration: none;
   }
 
