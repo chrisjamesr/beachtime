@@ -39,7 +39,7 @@
   }
 
   div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align:center;
     vertical-align: center;
     width: 25%;
@@ -53,6 +53,7 @@
     text-align: center; 
     margin: auto;
     text-transform: capitalize;
+    text-decoration: none;
     color: black;
     font-size: 2rem;
   }
@@ -69,11 +70,13 @@
 
   :global(a):visited {
     color: black;
+    text-decoration: none;
   }  
 
   .selected > :global(a){
     font-weight: 700;
     color:red;
+    text-decoration: none;
   }
 
 </style>
