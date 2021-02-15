@@ -1,7 +1,7 @@
 <script>
   import { Link } from 'svelte-routing';
   import linklist from '../linklist.js';  
-  let current;  
+  let current='';  
 </script>
 
 <header>
@@ -51,29 +51,36 @@
     margin: auto;
     text-transform: capitalize;
     text-decoration: none;
-    color:rgb(240,88,25);
+    /* color:rgb(240,88,25); */
+    color: black;
     font-size: 2rem;
   }
 
   :global(a):hover {
-    color:rgb(240,88,25);
+    color: black;
     text-decoration: none;
   }
 
   :global(a):active {
-    color:rgb(240,88,25);
+    color: black;
     text-decoration: none;
   }
 
   :global(a):visited {
-    color:rgb(240,88,25);
+    color: black;
     text-decoration: none;
   }  
-
   .selected > :global(a){
     font-weight: 700;
+    font-size: 2.1rem;
     color:rgb(240,88,25);
     text-decoration: none;
   }
+
+  /* .selected > :global(a){
+    font-weight: 700;
+    color:rgb(240,88,25);
+    text-decoration: none;
+  } */
 
 </style>
