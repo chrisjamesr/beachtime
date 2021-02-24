@@ -1,12 +1,18 @@
 <script>
-  let name, email, message;
-
-  const tempClickHandler = ()=> alert(
-          `Submit Button Clicked!\n
+  let name="";
+  let email="";
+  let message="";
+  const tempAlertMessage = `Submit Button Clicked!\n
           Name: ${name}\n
           Email: ${email}\n
-          Message: ${message}`
-          )
+          Message: ${message}`;
+
+  const tempSubmitHandler = ()=> {
+    
+    alert(tempAlertMessage);
+    
+  }
+    
 
 </script>
 
@@ -14,7 +20,7 @@
   <h1>Contact</h1>
 </header>
 <article>
-  <form>
+  <form on:submit={tempSubmitHandler}>
     <fieldset>
     <!-- <legend>Contact Us</legend> -->
 
@@ -30,12 +36,12 @@
 
       <div id='message'>
         <label for="name">Message:</label>
-        <textarea name="message" rows="5" bind:value={message}/><br>
+        <textarea name="message" rows="8" bind:value={message}/><br>
       </div> 
 
       <div class='button'>
 
-        <button type="submit" on:click={tempClickHandler}>Submit</button>
+        <button type="submit">Submit</button>
       </div>
 
     </fieldset>
@@ -74,14 +80,13 @@
   input, textarea {
     font-size: 1.15rem;
   }
-  input {
+  input, textarea {
     width: 50%;
     justify-self: left;
   }
-  textarea {
-    width: 75%;
-    
-  }
+  /* textarea {
+    width: 75%;    
+  } */
   label {
     width: 25%;
     text-align: left;
