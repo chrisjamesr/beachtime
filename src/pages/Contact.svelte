@@ -1,9 +1,13 @@
 <script>
+import { prevent_default } from "svelte/internal";
+
+
   let name="";
   let email="";
   let message="";
   
-  async function fetchTest(){
+  async function fetchTest(e){
+    e.preventDefault();
     const res = await fetch('/test', {
       method: 'get'
     });
