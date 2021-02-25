@@ -1,18 +1,26 @@
 <script>
-import { prevent_default } from "svelte/internal";
-
+  import { navigate } from "svelte-routing";
 
   let name="";
-  let email="";
+  let email=""
   let message="";
+  const postMsg = Object.assign({}, name, email, message);
   
-  async function fetchTest(e){
+  async function fetchTest(e){    
     e.preventDefault();
-    const res = await fetch('/test', {
-      method: 'get'
+    
+    const postMessage = await fetch('/test', {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'post',
+      body: JSON.stringify({postMsg})
+
     });
-    const response = await res.json(); 
-    console.log(response);
+
+    const response = await postMessage;
+    if(postMessage.ok) { navigate('/') }
+
   }
 
 </script>
