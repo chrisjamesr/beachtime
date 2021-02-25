@@ -2,17 +2,14 @@
   let name="";
   let email="";
   let message="";
-  const tempAlertMessage = `Submit Button Clicked!\n
-          Name: ${name}\n
-          Email: ${email}\n
-          Message: ${message}`;
-
-  const tempSubmitHandler = ()=> {
-    
-    alert(tempAlertMessage);
-    
+  
+  async function fetchTest(){
+    const res = await fetch('/test', {
+      method: 'get'
+    });
+    const response = await res.json(); 
+    console.log(response);
   }
-    
 
 </script>
 
@@ -20,7 +17,7 @@
   <h1>Contact</h1>
 </header>
 <article>
-  <form on:submit={tempSubmitHandler}>
+  <form on:submit={fetchTest}>
     <fieldset>
     <!-- <legend>Contact Us</legend> -->
 
