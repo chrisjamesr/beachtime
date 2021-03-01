@@ -6,87 +6,131 @@
 </script>
 
 <header>
-  <nav>
-    {#each linklist as link}
+  <div class="container">
 
-    <div class:selected="{ current === link.name }"
-         on:click="{ () => current = link.name}" >
-      
-      <Link class="nav-link" to={link.path}>
-        {link.name}
-      </Link>
-
+    <div class="title-block">
+      <h1>Beachtime</h1>
+      <h1>Tide Clocks</h1>
+      <h3>ROCKAWAY BEACH, NY</h3>
     </div>
+    
+    <nav>
+      {#each linklist as link}
+        <div class:selected="{ current === link.name }"
+            on:click="{ () => current = link.name}" >
+          
+          <Link class="nav-link" to={link.path}>
+            {link.name}
+          </Link>
+        </div>
+      {/each}
+    </nav>
 
-    {/each}
-  </nav>
+  </div>
 </header>
 
 <style>
   header {
     width: 100%;
-    height: 10vh;    
-    vertical-align: center;
+    height: 41.769%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
   }
 
-  nav {
-    width: 100%;
+  .container {
+    width:70%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 10%; */
     /* margin: auto; */
+  }
+
+  .title-block{
+    width:100%;
+    height: 100%;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 10%; */
+  }
+  .title-block > *{
+    margin: 0;
+  }
+  
+  nav {
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
   }
 
+  h1 {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 3.515625rem;
+    line-height: 115%;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  h1:first-of-type {
+    font-family: 'Yellowtail', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.809375rem;
+    line-height: 105%;
+    /* line-height: 10.625em; */
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.59375rem;
+    line-height: 170%;
+    text-align: center; 
+  }
   div {
-    /* text-align:center;
-    vertical-align: center; */
-    width: 25%;
+    width: 33%;
     display: flex;
     justify-content: center;
   }
 
   :global(a){
-    font-family: 'Petit Formal Script', cursive;
-    text-align: center; 
-    margin: auto;
-    /* height: 100%; */
-    width: 100%;
-    /* padding: 10%; */
-    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.40625rem;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* margin: auto; */
+    /* width: 100%; */
+    text-transform: uppercase;
     text-decoration: none;
-    /* color:rgb(240,88,25); */
-    color: black;
-    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
+    
   }
 
   :global(a):hover, :active, :visited {
-    color: black;
     text-decoration: none;
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55); */
   }
 
-  /* :global(a):active {
-    color: black;
-    text-decoration: none;
-  } */
-
-  /* :global(a):visited {
-    color: black;
-    text-decoration: none;
-  }   */
-
+  
   .selected {
-    font-weight: 700;
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55); */
+    /* font-weight: 700; */
     /* font-size: 2.25rem; */
     /* color:rgb(240,88,25); */
-    color: black;
-    background: rgb(36,21,0);
-    background: radial-gradient(
-      circle, 
-      rgba(36,21,0,0.9332107843137255) 0%, 
-      /* rgba(201,123,13,1) 0%,  */
-      rgba(255,155,70,1) 0%, 
-      rgba(172,157,171,0) 30%);
   }
 
 </style>
