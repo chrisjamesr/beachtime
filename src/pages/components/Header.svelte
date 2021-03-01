@@ -32,12 +32,12 @@
 <style>
   header {
     width: 100%;
-    height: 41.769%;
+    height: 43%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-    
+    padding-top: 1.5%;    
   }
 
   .container {
@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
+    margin: 2%
   }
 
   h1 {
