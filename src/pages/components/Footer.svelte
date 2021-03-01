@@ -7,8 +7,12 @@
 </footer>
 
 <style>
+  footer{
+    height: 2%;
+    padding-top: .75%;
+  }
   span {
     font-size: .75rem;
-    color:rgb(182,181,179);
+    color:rgb(0,62,77);
   }
 </style>
