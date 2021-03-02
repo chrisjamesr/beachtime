@@ -8,8 +8,9 @@
 
 <style>
   footer{
-    height: 2%;
-    padding-top: .75%;
+    width:100%;
+    /* height: 4%; */
+    padding-top: .5%;
   }
   span {
     font-size: .75rem;
