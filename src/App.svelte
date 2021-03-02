@@ -31,13 +31,16 @@
     
 
   </Router> 
+
   <Footer/>
 </main>
 
 <style>
 	main {
 		text-align: center;
-    height: 98%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
 	}
 
 	
@@ -47,24 +50,18 @@
 	}
 
 	.container {
-    /* margin: 0 auto;     */
     height: 98%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* text-align: center; */
     flex-direction: column;
-    /* max-width: 95vw;   */
+    
   }
 
 @media screen and (max-width: 500px) {
-  .title {
+  /* .title {
     font-size: 5rem;  
-  }
-
-  .title h1 {
-    margin: 2.5%;
-  }
+  } */
 
 }
 </style>
