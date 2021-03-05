@@ -19,89 +19,115 @@
     });
 
     const response = await postMessage;
-    if(postMessage.ok) { navigate('/') }
+    if(postMessage.ok) { 
+      navigate('/'); 
+      setTimeout(() => {
+        alert("message sent");
+      }, 1000);
+    }
 
   }
 
 </script>
 
-<header>
-  <h1>Contact</h1>
-</header>
-<article>
-  <form on:submit={fetchTest}>
-    <fieldset>
-    <!-- <legend>Contact Us</legend> -->
+<article class="content-container">
 
+  <div class="heading">
+    Contact
+  </div>
+
+  <section class="content">
+    We are happy to create a custom clock with an image<br/> 
+    that means something special to you. Contact us to get<br/> 
+    started on your special clock today!
+  </section>
+
+  <form on:submit={fetchTest}>
+
+    <fieldset>
+    
       <div id='name'>
-        <label for="name">Your Name:</label>
+        <label for="name">Name:</label>
         <input type="text" name="name" bind:value={name}/><br>
       </div>
 
       <div id='email'>
-        <label for="email">Email Address:</label>
+        <label for="email">Email:</label>
         <input type="email" name="email" bind:value={email}/><br>
       </div>
 
       <div id='message'>
         <label for="name">Message:</label>
-        <textarea name="message" rows="8" bind:value={message}/><br>
+        <textarea name="message" rows="6" bind:value={message}/><br>
       </div> 
 
-      <div class='button'>
-
-        <button type="submit">Submit</button>
-      </div>
+      <!-- <div class="submit-button"> -->
+        <button class="button">Submit</button>
+      <!-- </div> -->
 
     </fieldset>
   </form>
+
 </article>
 
 <style>
-  article {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+  .content-container {
+    justify-content: space-between;   
   }
+  .content {
+    width: 40%; 
+    font-size: 0.984375rem;
+  }
+
   form {
-    width: 100%;
-    padding: 5%;
+    width: 40%;
+    margin-right: 5%;
+    margin-bottom: 2%;
   }
 
   fieldset {
     border: none;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding: 2%;
+    align-items: flex-start;
+    width: 100%;
     font-size: 1.25rem;
   }
 
   fieldset div {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
-    margin: 2%;
+    align-content: baseline;
+    margin: 1% 0;
   }
-  div label {
-    justify-content: flex-start;
-  }
+  
   input, textarea {
     font-size: 1.15rem;
   }
+
   input, textarea {
-    width: 50%;
+    width: 90%;
     justify-self: left;
-  }
-  /* textarea {
-    width: 75%;    
-  } */
-  label {
-    width: 25%;
-    text-align: left;
+    background: #F5F5F5;
+    border: 0.75px solid #CFCFCF;
+    box-sizing: border-box;
+    align-self:flex-end;
   }
 
-  button {
-    justify-self: flex-end;
+  label {
+    width: 20%;
+    text-align: right;
+    font-size: 0.984375rem;
+    margin-right: 2%;
   }
+
+  .button {
+	  height: 18%;
+    padding: 2% 8%;
+    margin-top: 2%;
+    text-align: center;
+    align-self: flex-end;
+  }
+
 </style>

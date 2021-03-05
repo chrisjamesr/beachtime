@@ -32,7 +32,7 @@
 <style>
   header {
     width: 100%;
-    height: 43%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,7 @@
   h1 {
     font-style: normal;
     font-weight: 350;
-    font-size: 3.515625rem;
+    font-size: 3rem;
     line-height: 115%;
     text-align: center;
     color: #FFFFFF; 
@@ -83,7 +83,7 @@
     font-family: 'Yellowtail', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 5.809375rem;
+    font-size: 5rem;
     line-height: 105%;
     /* line-height: 10.625em; */
     text-align: center;
@@ -93,7 +93,7 @@
   h3 {
     font-style: normal;
     font-weight: 600;
-    font-size: 1.59375rem;
+    font-size: 1.5rem;
     line-height: 170%;
     text-align: center; 
   }

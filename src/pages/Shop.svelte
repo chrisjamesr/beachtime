@@ -2,9 +2,9 @@
 
 </script>
 
-<header>
-  <h1>Gallery</h1>
-</header>
+<article class="content-container">
+  <div class="heading">Shop</div>
+</article>
 
 <style>
   

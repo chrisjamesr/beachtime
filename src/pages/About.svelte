@@ -11,7 +11,7 @@
     </div>
 
     <section id="about">
-      We are a father daughter duo creating beautiful tide clocks to keep track of the local changing tides.
+      We are a father daughter duo creating beautiful<br> tide clocks to keep track of the local changing tides.
     <br>
       --A perfect addition to your home by the sea.
     </section>
@@ -22,20 +22,23 @@
 
   </section>
 
-  <figure>
+  <div>
     <img src="clock1.jpg" alt="Image of a tide clock">
     <!-- <figcaption>One of our beautiful tide clocks</figcaption> -->
-  </figure> 
+  </div> 
   
 </article>
 
 <style>
-   
+  .content-container {
+    flex-direction: row;
+  }
   .content {
     height: 90%;
     line-height: 3rem;
     width: 42%;
-    /* padding: 2% 0 3% 0; */
+    padding-left: 5%;
+    padding: 0 3% 0 3%;
     text-align: left;    
     display: flex;
     flex-direction: column;
@@ -48,13 +51,13 @@
   
   img {
     max-width: 90%;
-    margin:auto;
+    margin: auto;
     /* width: 80%; */
   }
 
   figure {
     /* align-items: center;  */
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
   }
 
@@ -66,6 +69,13 @@
     line-height: 150%;
     /* or 28px */
     color: #000000;
+  }
+
+  .button {
+    width: 30%;
+	  height: 18%;
+    padding: 2% 10%;
+    /* cursor: pointer; */
   }
 
 </style>
