@@ -37,8 +37,8 @@
   </div>
 
   <section class="text-content">
-    We are happy to create a custom clock with an image<br/> 
-    that means something special to you. Contact us to get<br/> 
+    We are happy to create a custom clock with an image
+    that means something special to you. Contact us to get
     started on your special clock today!
   </section>
 
@@ -87,9 +87,10 @@
   }
 
   form {
-    width: 40%;
-    margin-right: 5%;
-    margin-bottom: 2%;
+    width: 50%;
+    /* margin-right: 5%;
+    margin-bottom: 2%; */
+    padding-right: 10%;
   }
 
   fieldset {
@@ -136,5 +137,12 @@
     text-align: center;
     align-self: flex-end;
   }
+
+  @media screen and (max-width: 1155px) {
+  section.text-content {
+    text-align: left;
+  }
+
+}
 
 </style>
