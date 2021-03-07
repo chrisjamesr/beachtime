@@ -36,7 +36,7 @@
     Contact
   </div>
 
-  <section class="content">
+  <section class="text-content">
     We are happy to create a custom clock with an image<br/> 
     that means something special to you. Contact us to get<br/> 
     started on your special clock today!
@@ -62,7 +62,7 @@
       </div> 
 
       <!-- <div class="submit-button"> -->
-        <button class="button">Submit</button>
+        <button class="button">SUBMIT</button>
       <!-- </div> -->
 
     </fieldset>
@@ -71,12 +71,19 @@
 </article>
 
 <style>
+  
   .content-container {
-    justify-content: space-between;   
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: center; 
   }
-  .content {
-    width: 40%; 
-    font-size: 0.984375rem;
+
+  .text-content {
+    width: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.171875rem;
+    line-height: 150%;
   }
 
   form {

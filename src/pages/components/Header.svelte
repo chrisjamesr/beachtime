@@ -31,13 +31,15 @@
 
 <style>
   header {
+    box-sizing: border-box;
     width: 100%;
-    height: 40%;
+    /* height: 30%; */
+    min-height: 260px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-    padding-top: 1.5%;    
+    padding-bottom: 2%;
   }
 
   .container {
@@ -46,8 +48,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 0 10%; */
-    /* margin: auto; */
   }
 
   .title-block{
@@ -56,9 +56,8 @@
     flex-direction: column;    
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 10%; */
   }
-  .title-block > *{
+  .title-block > * {
     margin: 0;
   }
   
@@ -68,7 +67,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;  
-    margin: 2%
   }
 
   h1 {
@@ -84,8 +82,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 5rem;
-    line-height: 105%;
-    /* line-height: 10.625em; */
+    line-height: 110%;
     text-align: center;
     color: #FFFFFF;
   }
@@ -107,23 +104,19 @@
     font-style: normal;
     font-weight: 900;
     font-size: 1.40625rem;
-    line-height: 37px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    /* margin: auto; */
-    /* width: 100%; */
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
-    
+
   }
 
   :global(a):hover, :active, :visited {
     text-decoration: none;
-    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55); */
   }
 
   

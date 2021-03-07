@@ -10,21 +10,23 @@
       Always Know The Tide
     </div>
 
-    <section id="about">
+    <section class="text-content">
       We are a father daughter duo creating beautiful<br> tide clocks to keep track of the local changing tides.
     <br>
       --A perfect addition to your home by the sea.
     </section>
-    <a href="https://www.instagram.com/beachtime_tideclocks/" class="button"
-      rel="noreferrer noopener" target="_blank" >
-      Shop Our Instagram
-    </a>
+
+    <div class="button">
+      <a href="https://www.instagram.com/beachtime_tideclocks/"
+        rel="noreferrer noopener" target="_blank" >
+        Shop Our Instagram
+      </a>
+    </div>
 
   </section>
 
   <div>
     <img src="clock1.jpg" alt="Image of a tide clock">
-    <!-- <figcaption>One of our beautiful tide clocks</figcaption> -->
   </div> 
   
 </article>
@@ -42,40 +44,42 @@
     text-align: left;    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  /* .wrapper {
-    align-self: center;
-  } */
-  
-  
+    
   img {
     max-width: 90%;
     margin: auto;
-    /* width: 80%; */
   }
 
   figure {
-    /* align-items: center;  */
-    /* height: 100%; */
     margin: 0;
   }
 
-  #about {
+  .text-content {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 1.171875rem;
     line-height: 150%;
-    /* or 28px */
     color: #000000;
   }
 
-  .button {
+  /* .button {
     width: 30%;
 	  height: 18%;
     padding: 2% 10%;
-    /* cursor: pointer; */
+  } */
+
+  .button {
+    padding: 3%;
+    width: 180px;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  
+  a {
+    width: 100%;
   }
 
 </style>

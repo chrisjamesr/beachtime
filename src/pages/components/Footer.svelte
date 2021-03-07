@@ -9,7 +9,7 @@
 <style>
   footer{
     width:100%;
-    /* height: 4%; */
+    height: 3%;
     padding-top: .5%;
   }
   span {

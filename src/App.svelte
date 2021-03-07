@@ -36,29 +36,28 @@
 </main>
 
 <style>
+
 	main {
 		text-align: center;
-    height: 99%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 	}
 
-	
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;    
+  }	
 
 	@media (min-width: 640px) {
 		
 	}
 
-	.container {
-    height: 98%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-
-@media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
   /* .title {
     font-size: 5rem;  
   } */
