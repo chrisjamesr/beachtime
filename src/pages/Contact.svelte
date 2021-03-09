@@ -75,7 +75,8 @@
   .content-container {
     flex-direction: column;
     justify-content: space-between;  
-    align-items: center; 
+    align-items: center;
+    
   }
 
   .text-content {
@@ -138,11 +139,19 @@
     align-self: flex-end;
   }
 
-  @media screen and (max-width: 1155px) {
-  section.text-content {
-    text-align: left;
+  @media screen and (min-height: 900px) {
+    .content-container {
+    /* flex-direction: column; */
+    justify-content: space-around;  
+    /* max-height: 800px; */
+    } 
   }
 
-}
+  @media (max-height: 768px), screen and (orientation: portrait) {
+    .content-container {
+      padding-bottom: 20%;
+    }
+    
+  }
 
 </style>

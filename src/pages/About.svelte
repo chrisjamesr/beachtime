@@ -11,7 +11,7 @@
     </div>
 
     <section class="text-content">
-      We are a father daughter duo creating beautiful<br> tide clocks to keep track of the local changing tides.
+      We are a father daughter duo creating beautiful tide clocks to keep track of the local changing tides.
     <br>
       --A perfect addition to your home by the sea.
     </section>
@@ -25,20 +25,20 @@
 
   </section>
 
-  <div>
     <img src="clock1.jpg" alt="Image of a tide clock">
-  </div> 
   
 </article>
 
 <style>
   .content-container {
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
   }
   .content {
     height: 90%;
     line-height: 3rem;
-    width: 42%;
+    max-width: 42%; 
+    flex: 1 2 auto;
     padding-left: 5%;
     padding: 0 3% 0 3%;
     text-align: left;    
@@ -48,12 +48,12 @@
   }
     
   img {
-    max-width: 90%;
-    margin: auto;
-  }
-
-  figure {
-    margin: 0;
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    /* margin: auto; */
+    /* align-self: center; */
+    /* flex: 0 1 auto; */
   }
 
   .text-content {
@@ -65,12 +65,6 @@
     color: #000000;
   }
 
-  /* .button {
-    width: 30%;
-	  height: 18%;
-    padding: 2% 10%;
-  } */
-
   .button {
     padding: 3%;
     width: 180px;
@@ -81,5 +75,20 @@
   a {
     width: 100%;
   }
+/* 1440px x 821px */
 
+  @media (max-height: 768px), screen and (orientation: portrait) {
+    .content-container {
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+    .content{
+      height: 40%;
+      max-width: 90%;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;    
+    }
+    
+  }
 </style>

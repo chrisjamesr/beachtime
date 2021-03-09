@@ -6,7 +6,6 @@ html, body {
 
 body {
 	margin: 0;
-	/* padding: 8px; */
 	box-sizing: border-box;
 	background-image: url("ShoreBG.jpg");
 	background-size: cover; 
@@ -17,7 +16,7 @@ body {
 .content-container {
 	width: 90%;
 	height: 70%;
-	/* max-height: 62%; */
+	max-height: 750px;
 	background: rgba(255, 255, 255, 0.5);
 	padding: 2% 10% 0 10%; 
 	display: flex;
@@ -38,12 +37,11 @@ body {
 
 .button {
 	background-color: #013E48;    
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: 900;
-	/* font-size: 0.984375rem; */
-	/* line-height: 130%; */
-	/* align-items: center; */
-	/* text-align: center; */
 	color: #FFFFFF;
 }
+ @media screen and (max-width: 1030px) {
+
+ }

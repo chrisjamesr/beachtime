@@ -25,18 +25,27 @@
     </div>
 
   </section>   
+  <!-- LightWidget WIDGET -->
+  <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> -->
+  <iframe src="//lightwidget.com/widgets/7f501f24b03e5de6a47183a0cc16380c.html"
+    scrolling="no" allowtransparency="true" 
+    class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;">
+  </iframe>
   
-   <div id="widget">
-    <!-- LightWidget WIDGET -->
-      <iframe src="//lightwidget.com/widgets/03fcc7c3dff951ea9ac8358371314f97.html"
+
+   <!-- <div id="widget"> -->
+      <!-- <iframe src="//lightwidget.com/widgets/03fcc7c3dff951ea9ac8358371314f97.html"
           title="lightwidget" scrolling="no" allowtransparency="true" 
           class="lightwidget-widget" >
-      </iframe>
-    </div>
+      </iframe> -->
+    <!-- </div> -->
 
 </article>
 
 <style>
+  .content-container {
+    flex-wrap: nowrap;
+  }
 
    .content {
     height: 70%;
@@ -66,15 +75,37 @@
     width: 100%;
   }
 
-  #widget {
-    width: 33%; 
-  }
-
   iframe {
-    min-width: 365px;
+    max-width: 400px;
+    height: auto;
     width: 100%;
     border: 0;
     overflow: hidden;
   }
  
+  @media screen and (max-width: 920px) {
+    a {
+      font-size: 1rem;
+    }
+   .button {
+     align-self: center;
+     width: 80%;
+   }
+  
+  @media (max-height: 768px), screen and (orientation: portrait) {
+    .content-container {
+      flex-wrap: wrap;
+      width:100%;
+      /* align-content: stretch; */
+    }
+    .content{
+      height: 40%;
+      width: 60%;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;    
+    }    
+  }
+
+ }
 </style>
