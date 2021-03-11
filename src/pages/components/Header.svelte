@@ -94,6 +94,7 @@
     line-height: 170%;
     text-align: center; 
   }
+
   div {
     width: 33%;
     display: flex;
@@ -112,19 +113,33 @@
     text-decoration: none;
     color: #FFFFFF;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
-
   }
 
   :global(a):hover, :active, :visited {
     text-decoration: none;
   }
-
   
-  .selected {
-    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55); */
-    /* font-weight: 700; */
-    /* font-size: 2.25rem; */
-    /* color:rgb(240,88,25); */
-  }
+  /* .selected {
+  
+  } */
 
+  @media screen and (max-height: 375px) and (orientation: portrait) {
+    h1 {
+    font-size: 1.5rem;
+    line-height: 115%;
+    }
+    h1:first-of-type {
+      font-size: 2.5rem;
+      line-height: 110%;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: .75rem;
+      line-height: 170%;
+    }
+    nav {
+      display: none;
+    }
+	}	 
 </style>
